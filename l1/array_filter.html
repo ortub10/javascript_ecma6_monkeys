@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //filter array
+
+      let fruits_ar = [
+        {
+          name: "apple",
+          price: 10,
+        },
+
+        {
+          name: "mango",
+          price: 5,
+        },
+
+        {
+          name: "banana",
+          price: 7,
+        },
+      ];
+
+      let exp_fruits_ar;
+      window.onload = function () {
+        exp_fruits_ar = fruits_ar.filter(function (item) {
+          if (item.price > 6) {
+            return true;
+          } else {
+            return false;
+          }
+        });
+
+        console.log(exp_fruits_ar);
+      };
+    </script>
+  </head>
+  <body></body>
+</html>
