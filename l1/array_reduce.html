@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let usd_ar = [40, 30, 20, 5];
+      window.onload = function () {
+        let total_usd = usd_ar.reduce(function (prev, curr) {
+          let total;
+          total = prev + curr;
+          return total;
+        });
+
+        console.log(total_usd);
+      };
+    </script>
+  </head>
+  <body></body>
+</html>
