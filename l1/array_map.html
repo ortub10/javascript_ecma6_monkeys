@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let vip_ar = [
+        { firstName: "Ploni", lastName: "Almoni" },
+        { firstName: "Bill", lastName: "Gates" },
+        { firstName: "Koko", lastName: "Akof" },
+      ];
+
+      window.onload = function () {
+        let full_ar = vip_ar.map(getFullName);
+        console.log(full_ar);
+      };
+
+      function getFullName(item) {
+        return item.firstName + " " + item.lastName;
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
