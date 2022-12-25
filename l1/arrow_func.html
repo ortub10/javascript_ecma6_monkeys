@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/car_class_es6.js"></script>
+    <script>
+      let cars_ar = ["Mazda", "Opel", "Seat", "Toyaota"];
+      window.onload = function () {
+        showCars(cars_ar);
+
+        let car1 = new Car("Mazda", 2010, "40k NIS");
+        let car2 = new Car("Toyota", 2013, "60k NIS");
+        car1.addToHtml();
+        car2.addToHtml();
+
+        let truck = new Truck("volovo", 2019, "1m", 200);
+        truck.addToHtml();
+      };
+
+      const showCars = (cars) => console.log(cars); // Arrow function
+
+      // const showCars = function (cars) {
+      //   console.log(cars);
+      // };
+    </script>
+  </head>
+  <body>
+    <div style="padding: 10px 50px">
+      <h1>Study topics for today:</h1>
+      <ui style="font-size: 2em; color: gray">
+        <li>Arrow function</li>
+        <li>Class Es 6</li>
+        <li>extends from class</li>
+      </ui>
+      <h3 id="id_h3"></h3>
+    </div>
+    <div style="padding: 10px 50px" id="id_parent">
+      <h2>Car dealer shop</h2>
+    </div>
+  </body>
+</html>
