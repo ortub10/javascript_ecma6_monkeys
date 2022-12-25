@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let def_ar = ["d", "e", "f"];
+      let abc_ar = ["a", "b", "c", ...def_ar, "g", "h"]; // this the way to add the def_ar
+      console.log(abc_ar);
+      let car1 = {
+        model: "mazda",
+        year: 2008,
+      };
+
+      let car2 = { ...car1 }; // This is the way to copy object
+      car1.model = "Toyota";
+      console.log(car2);
+      let user = "koko";
+      window.onload = function () {
+        let id_h3 = document.querySelector("#id_h3");
+        id_h3.innerHTML = `Hi ${user} to our site`;
+        showAlert();
+      };
+
+      function showAlert(user = "koko", age = 50) {
+        // Default parameters function
+        alert(`hi ${user} tour age is ${age}`);
+      }
+    </script>
+  </head>
+  <body>
+    <div style="padding: 10px 50px">
+      <h1>Study topics for today:</h1>
+      <ui style="font-size: 2em; color: gray">
+        <li>Template strings</li>
+        <li>Spread operators</li>
+        <li>Default parameters function</li>
+      </ui>
+      <h3 id="id_h3"></h3>
+    </div>
+  </body>
+</html>
