@@ -1,4 +1,4 @@
-class CryptoClass {
+export class CryptoClass {
   constructor(_parent, _name, _price) {
     this.parent = _parent;
     this.name = _name;

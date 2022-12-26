@@ -1,3 +1,5 @@
+import { CryptoClass } from "./bit.js";
+
 window.onload = () => {
   doRestApi();
 };
