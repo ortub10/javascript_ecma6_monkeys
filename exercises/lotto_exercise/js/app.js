@@ -13,7 +13,15 @@ const declareEvents = function () {
   let reset_btn = document.querySelector("#reset_btn");
 
   start_btn.addEventListener("click", startLotto);
-  reset_btn.addEventListener("click", () => {});
+  reset_btn.addEventListener("click", resetLotto);
+};
+
+const resetLotto = () => {
+  if (confirm("Are you sure you want to restart?")) {
+    document.querySelector("#id_balls").innerHTML = "";
+    clearInterval(timer);
+    play = false;
+  }
 };
 
 const startLotto = () => {
@@ -35,6 +43,6 @@ const startLotto = () => {
       if (counter >= 6) {
         clearInterval(timer);
       }
-    }, 500);
+    }, 1000);
   }
 };

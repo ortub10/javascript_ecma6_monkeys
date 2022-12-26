@@ -8,6 +8,7 @@ class Ball {
   render() {
     let div = document.createElement("div");
     div.className = "ball";
+    div.style.background = this.color;
     document.querySelector(this.parent).append(div);
 
     div.innerHTML = `<div class="ball_center">${this.num}</div>`;
