@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.onload = () => {
+        // add(10);
+        addPromise(10);
+      };
+
+      function addPromise(_x) {
+        return new Promise((resolve, reject) => {
+          _x += 10;
+          console.log(_x);
+          resolve(_x);
+        })
+          .then((_newX) => {
+            console.log("from promise " + _newX);
+            _newX += 11;
+            return new Promise((resolve, reject) => {
+              resolve(_newX);
+            });
+          })
+          .then((_newX) => {
+            console.log("from promise " + _newX);
+            _newX += 12;
+            return new Promise((resolve, reject) => {
+              resolve(_newX);
+              console.log("from promise " + _newX);
+            });
+          });
+      }
+
+      function add(_x) {
+        setTimeout(() => {
+          _x += 10;
+          console.log(_x);
+          setTimeout(() => {
+            _x += 11;
+            console.log(_x);
+            setTimeout(() => {
+              _x += 13;
+              console.log(_x);
+            }, 100);
+          }, 100);
+        }, 100);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
