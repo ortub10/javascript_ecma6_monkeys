@@ -1,4 +1,6 @@
-let local_ar = [];
+let local_ar = localStorage["students"]
+  ? JSON.parse(localStorage["students"])
+  : [];
 
 const init = () => {
   declareViewEvents();
@@ -22,7 +24,6 @@ const declareViewEvents = () => {
     local_ar.push(student_obj);
 
     localStorage.setItem("students", JSON.stringify(local_ar));
-    // console.log(local_ar);
   });
 };
 init();

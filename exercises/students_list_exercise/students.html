@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <title>Document</title>
-    <script defer src="js/studentForm.js"></script>
+    <script type="module" defer src="js/appStudents.js"></script>
   </head>
   <body>
     <header class="container-fluid bg-warning p-2">
@@ -20,24 +20,29 @@
         <a href="studentForm.html" class="me-2">Add new student</a>
       </nav>
     </header>
-    <div class="container">
-      <h1 class="display-4 text-center">Add student form</h1>
-      <form id="id_form" class="col-md-6 p-2 mx-auto">
-        <label>Name:</label>
-        <input id="name" type="text" class="form-control" />
-
-        <label>Score:</label>
-        <input id="score" type="text" class="form-control" />
-
-        <label>Choose subject</label>
-        <select id="subject" class="form-select">
-          <option value="html">HTML</option>
-          <option value="js">Javascript</option>
-          <option value="react">React</option>
-        </select>
-
-        <button class="btn btn-success mt-3">Add new student</button>
-      </form>
-    </div>
+    <main class="container">
+      <h1 class="display-4">Students list you added before</h1>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>name</th>
+            <th>score</th>
+            <th>subject</th>
+            <th>delelte</th>
+          </tr>
+        </thead>
+        <tbody id="id_body">
+          <!-- Example to line-->
+          <!-- <tr>
+            <td>1</td>
+            <td>Koko</td>
+            <td>80</td>
+            <td>react</td>
+            <td><button>del</button></td>
+          </tr> -->
+        </tbody>
+      </table>
+    </main>
   </body>
 </html>

@@ -14,3 +14,11 @@ Verifying the form and saving it to local storage
 ![part2_b](https://user-images.githubusercontent.com/102150516/209666171-ee0184ca-2a6a-4bc0-bd7a-a49e4f38b509.png)
 
 ---
+
+## part 3:
+
+Retrieving local information and creating a students page
+
+![part3](https://user-images.githubusercontent.com/102150516/209672741-13c1402a-a6d2-480e-ab90-0149149a3f2f.png)
+
+---
