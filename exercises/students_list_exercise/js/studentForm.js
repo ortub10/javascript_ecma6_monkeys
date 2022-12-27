@@ -24,6 +24,7 @@ const declareViewEvents = () => {
     local_ar.push(student_obj);
 
     localStorage.setItem("students", JSON.stringify(local_ar));
+    alert("Student added");
   });
 };
 init();

@@ -22,3 +22,11 @@ Retrieving local information and creating a students page
 ![part3](https://user-images.githubusercontent.com/102150516/209672741-13c1402a-a6d2-480e-ab90-0149149a3f2f.png)
 
 ---
+
+## part 4:
+
+Displaying information in the table and deleting records from the table
+
+![part4](https://user-images.githubusercontent.com/102150516/209676032-fc7b1d41-9a22-4475-af42-0c424f8a3288.png)
+
+---
